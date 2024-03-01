@@ -1,0 +1,112 @@
+:root {
+	--verdinhoclaro: #D7E4C0;
+	--verdinhomedio: #C6DCBA;
+	--verdinhoescuro: #BBC3A4;
+	--marrom: #B3A398;
+}	
+
+
+/* Ajustes gerais */
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: helvetica, sans-serif; 
+	background: var(--marrom) ;
+}
+
+/* Cabeçalho e rodapé */
+header, footer {
+	width: 100%;
+	padding: 30px;
+	overflow: hidden;
+	text-align: center;
+	background: var(--verdinhoescuro);
+	color: black;
+}
+footer {
+	text-align: right;
+	padding-top: 100px;
+	color: black;
+}
+
+/* Barra de navegação */
+#navbar {
+	width: 100%;
+	overflow: hidden;
+	background: var(--verdinhoescuro);
+}
+#navbar ul {
+	list-style-type: none; /* Tira as bolinhas */
+	margin: 0;
+	padding: 0;
+	
+}
+#navbar ul li {
+	float: left; /* Pra ficar um do lado do outro */
+}
+#navbar ul li a {
+	text-decoration: none;
+	padding: 14px 16px;
+	display: block;
+	color: black;
+	background: var(--verdinhoescuro);
+
+
+}
+#navbar ul li a:hover {
+	color: black;
+	background: var(--verdinhomedio);
+}
+
+/* Coluna Laterais */
+.coluna {
+	width: 20%;
+	padding: 20px;
+	float: left;.
+
+}
+
+/* Coluna Central */
+article {
+	width: 60%;
+	padding: 20px;
+	float: left;
+	background: var(--marrom) ;
+	text-align: justify;
+}
+
+article img {
+	width: 40%; /* largura */
+	display: block;
+	margin: auto;
+}
+
+#main-banner {
+	width: 100%;
+}
+
+/*responsivo*/
+
+/*telas médias*/
+@media screen and (max-widht: 800px) {
+	.coluna {
+		width: 30%;
+	}
+
+	article{
+		width: 70%;
+	}
+}
+
+
+@media screen and (max-widht: 100px) {
+	.coluna {
+		width: 100%;
+	}
+
+	article{
+		width: 100%;
+	}
+}
