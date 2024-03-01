@@ -90,7 +90,7 @@ article img {
 /*responsivo*/
 
 /*telas médias*/
-@media screen and (max-widht: 800px) {
+@media screen and (max-width: 800px) {
 	.coluna {
 		width: 30%;
 	}
@@ -101,7 +101,7 @@ article img {
 }
 
 
-@media screen and (max-widht: 600px) {
+@media screen and (max-width: 600px) {
 	.coluna {
 		width: 100%;
 	}
